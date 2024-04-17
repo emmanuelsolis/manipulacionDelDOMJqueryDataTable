@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="jquery-ui.css" rel="stylesheet">
+    <link href="js/jquery-ui.min.css"></link>
+    <link href="js/jquery-ui.structure.min.css"></link>
+    <link href="js/jquery-ui.theme.min.css"></link>
+    <title>Document</title>
+
+
+</head>
+<body>
+    <!-- Tabs -->
+<h2 class="demoHeaders">Listas de Escritores y Libros</h2>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Autor </a></li>
+		<li><a href="#tabs-2">Libros</a></li>
+	</ul>
+	<div id="tabs-1">
+        <table id="personTable" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Email</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+	<div id="tabs-2">
+        <table id="bookTable" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Año</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+        $( "#tabs" ).tabs();
+    </script>
+</body>
+</html>
